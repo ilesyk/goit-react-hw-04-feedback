@@ -24,6 +24,7 @@ export const App = () => {
     const totalFeedbacks = countTotalFeedback();
     return Math.round((feedbacks.good / totalFeedbacks) * 100);
   };
+  
   return (
     <div>
       <Section title="Please leave feedback">
