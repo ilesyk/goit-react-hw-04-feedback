@@ -1,9 +1,13 @@
-export function Feedback ({options, onLeaveFeedback})  {
-    return (
-      <div>
-            {options.map(option => {
-               return <button key={option} onClick={() => onLeaveFeedback(option)}>{option}</button>
-        })}
-      </div>
-    );
+export function Feedback({ options, changeFeedback }) {
+  return (
+    <div>
+      {options.map(option => {
+        return (
+          <button key={option} onClick={() => changeFeedback(option)}>
+            {option}
+          </button>
+        );
+      })}
+    </div>
+  );
 }

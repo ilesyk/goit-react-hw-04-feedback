@@ -1,13 +1,11 @@
-
-
-export function Statistics({ good, neutral, bad, total, percentage }) {
-    return (
-      <div>
-            <p>Good: {good}</p>
-            <p>Neutral: {neutral}</p>
-            <p>Bad: {bad}</p>
-            <p>Total: {total}</p>
-            <p>Positive feedback: {percentage}%</p>
-      </div>
-    );
+export function Statistics({ feedbacks, total, percentage }) {
+  return (
+    <div>
+      <p>Good: {feedbacks.good}</p>
+      <p>Neutral: {feedbacks.neutral}</p>
+      <p>Bad: {feedbacks.bad}</p>
+      <p>Total: {total}</p>
+      <p>Positive feedback: {percentage}%</p>
+    </div>
+  );
 }
