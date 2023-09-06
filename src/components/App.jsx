@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Feedback } from './Feedback';
 import { Message } from './Message';
 import { Section } from './Section';
@@ -24,7 +22,7 @@ export const App = () => {
     const totalFeedbacks = countTotalFeedback();
     return Math.round((feedbacks.good / totalFeedbacks) * 100);
   };
-  
+
   return (
     <div>
       <Section title="Please leave feedback">
